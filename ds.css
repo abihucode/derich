@@ -1,0 +1,123 @@
+:root {
+  --primary: #2b4c7e;
+  --secondary: #567ebb;
+  --accent: #ff6b6b;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect width="100%" height="100%" fill="%232b4c7e"/><circle cx="500" cy="300" r="200" fill="%23567ebb" opacity="0.2"/></svg>');
+  background-size: cover;
+  color: white;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.service-card {
+  border: none;
+  transition: transform 0.3s;
+  margin-bottom: 30px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background: var(--primary);
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--accent);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1s ease forwards;
+}
+.hero {
+  background-image: url(images/CCTV-camera-range-solutions-TVSe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 12300px;
+  width: 100%;
+  border-bottom: 2px solid blue;
+  text-align: center;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@media (max-width: 768px) {
+  .containers {
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 16px;
+  }
+  .hero {
+    width: 100%;
+    padding: 100px 0;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    font-size: 26px;
+    font-style: normal;
+    color: rgb(235, 141, 0);
+    max-width: 1300px;
+  }
+  .child-container {
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 16px;
+    color: orange;
+  }
+  .child-container h1 {
+    font-size: 30px;
+  }
+}
+.child-container {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.822);
+  padding: 15px;
+  border-radius: 15px;
+}
